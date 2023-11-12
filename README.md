@@ -1,2 +1,2 @@
 # minhas-viagens
- Aplicando conhecimentos de HTML e CSS estou criando uma página com algumas informações experiências de viagens que eu realizei.
+ Aplicando conhecimentos já obtidos de HTML e CSS e, continuando meus estudos, estou criando uma página com algumas informações e experiências de viagens que eu realizei.
