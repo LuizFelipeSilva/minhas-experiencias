@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minhas viagens</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Krona+One&family=Montserrat:wght@400;600&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="styles.css">
+    
     
 </head>
 <body>
@@ -35,10 +37,45 @@
             <a class="container__imagem" href="#" ><img src="/img/Usuário.svg" alt="Meu perfil"></a>
         </div>
     </header>
+
     <section class="banner">
         <h2 class="banner__tituto">Pesquise por minhas viagens</h2>
         <p class="banner__texto">Compartilho com você um pouco das minhas experiências e momentos incríveis das minhas viagens</p>
         <input type="search" class="banner__pesquisa" placeholder="Qual viagem gostaria de ver ?">
     </section>
+
+    <section class="carrosel">
+        <h2 class="carrosel__titulo">Opções de viagem</h2>
+        <div class="swiper">
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+                <div class="swiper-slide"><img class="swiper__img" src="https://as1.ftcdn.net/v2/jpg/04/46/68/54/1000_F_446685484_4dFk14DMo6z3fRI7yPLmKfXDA73ri6t3.jpg" alt="Imagem Orlando"></div>
+                <div class="swiper-slide"><img class="swiper__img" src="https://img.freepik.com/fotos-premium/vertical-imagem-de-vermelho-branco-listrado-eclaireurs-farol-ligado-um-rochoso-ilhas-canal-beagle-ushuaia-argentina_76000-1593.jpg?w=360" alt="Imagem Argentina"></div>
+                <div class="swiper-slide"><img class="swiper__img" src="https://img.freepik.com/fotos-gratis/grande-navio-de-cruzeiro-luxuoso-navegando-no-mar-em-um-dia-ensolarado-ai-generative_123827-23862.jpg?w=740&t=st=1699828120~exp=1699828720~hmac=8c6f0d084d97849f2c4a283d762bf9c747d9a4758e20c0f105b376af65d7e94f" alt="Imagem navio"></div>
+                <div class="swiper-slide"><img class="swiper__img" src="https://s2.glbimg.com/X5xipNvlLYYt4lc5W2uJMkM5b1w=/smart/e.glbimg.com/og/ed/f/original/2020/01/17/monte-verde-lugares-acolhedores-do-mundo-11.jpg" alt="Imagem Monte Verde"></div>
+                <div class="swiper-slide"><img class="swiper__img" src="https://upload.wikimedia.org/wikipedia/commons/0/01/Arma%C3%A7%C3%A3o_de_B%C3%BAzios_05.JPG" alt="Imagem Búzios"></div>
+            </div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 2,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets'
+            },
+
+        });
+    </script>
 </body>
 </html>
