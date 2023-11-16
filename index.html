@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Krona+One&family=Montserrat:wght@400;600&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Josefin+Sans:wght@400;700&family=Krona+One&family=Montserrat:wght@400;600&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -27,23 +28,38 @@
                 <li class="lista-menu__item"><a href="#" class="lista-menu__link">Argentina</a></li>
                 <li class="lista-menu__item"><a href="#" class="lista-menu__link">Navio</a></li>
                 <li class="lista-menu__item"><a href="#" class="lista-menu__link">Monte verde</a></li>
-                <li class="lista-menu__titulo">Restaurantes</li>
-                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Restaurante 1</a></li>
-                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Restaurante 2</a></li>
-                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Restaurante 3</a></li>
-                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Restaurante 4</a></li>
+                <li class="lista-menu__titulo">Comidas</li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Carne de chorizo</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Risoto de camarão</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Risoto de filé mignon</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Comidas 4</a></li>
             </ul>
             <!-- <img class="container__imagem" src="/img/Logo.svg" alt="Logo Alura"> -->
+            <h1 class="container__titulo"><b class="container__titulo--negrito" >Minhas</b> experiências</h1>
         </div>
+
+        <ul class="opcoes">
+            <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
+            <label for="opcoes-menu">
+                <li class="opcoes__item">Categorias</li>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Viagens</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Comidas</a></li>
+            </ul>
+            <li class="opcoes__item"><a href="https://portifolio-lfols.vercel.app/index.html" class="opcoes__link">Home</a></li>
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Favoritos</a></li>
+        </ul>
+
         <div class="container">
-            <a class="container__imagem" href="#" ><img src="/img/Favoritos.svg" alt="meus favoritos"></a>
+            <a class="container__imagem container__imagem-transparente" href="#" ><img src="/img/Favoritos.svg" alt="meus favoritos"></a>
             <!-- <a class="container__imagem" href="#" ><img src="/img/Sacola.svg" alt="Carrinho de compras"></a> -->
-            <a class="container__imagem" href="#" ><img src="/img/Usuário.svg" alt="Meu perfil"></a>
+            <a class="container__imagem container__imagem-transparente" href="https://portifolio-lfols.vercel.app/index.html" ><img src="/img/Usuário.svg" alt="Meu perfil"><h2 class="img__home">Home</h2></a>
         </div>
     </header>
 
     <section class="banner">
-        <h2 class="banner__tituto">Pesquise por minhas experiências</h2>
+        <h2 class="banner__titulo">Pesquise por minhas experiências</h2>
         <p class="banner__texto">Compartilho com você um pouco das minhas experiências e momentos incríveis</p>
         <input type="search" class="banner__pesquisa" placeholder="Qual tópico gostaria de ver ?">
     </section>
@@ -86,7 +102,7 @@
     </section>
 
     <section class="carrosel">
-        <h2 class="carrosel__titulo">Opções de restaurante</h2>
+        <h2 class="carrosel__titulo">Comidas</h2>
         <div class="swiper">
             <div class="swiper-pagination"></div>
             <div class="swiper-wrapper">
@@ -107,7 +123,7 @@
                 <a href="#" class="topicos__link">Viagens</a>
             </li>
             <li class="topicos__item">
-                <a href="#" class="topicos__link">Restaurantes</a>
+                <a href="#" class="topicos__link">Comidas</a>
             </li>
         </ul>
     </section>

@@ -5,8 +5,13 @@ hr {
     background-color: var(--branco);
     padding: 1em;
     font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .rodape__titulo {
-
+    color: var(--azul-degrade);
+    font-weight: 700;
+    font-size: 18px;
 }
