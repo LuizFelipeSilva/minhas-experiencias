@@ -91,11 +91,26 @@
     .carrosel__titulo {
         font-size: 26px;
     }
-    .swiper-pagination {
+    .swiper-pagination{
         margin: 2em 0 3em 0;
+        
     }
     .swiper {
         width: 60%;
+    }
+
+    .swiper-slide {
+        overflow: hidden;
+    }
+
+    .swiper-slide img {
+        -webkit-transition: -webkit-transform .5s ease;
+        transition: trasnform .5s ease;
+    }
+
+    .swiper-slide:hover img {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
     }
 
     .swiper-button-prev, .swiper-button-next {
@@ -111,15 +126,21 @@
 }
 
 @media screen and (min-width:1728px) {
+    .carrosel {
+        padding: 1em;
+        margin: 1em;
+    }
     .swiper-pagination {
-        margin: 3em 0 4em 0;
+        margin: 1.5em;
+    
     }
     .swiper {
-        width: 40%;
+        width: 30%;
     }
+    
     .swiper-button-prev, .swiper-button-next {
         display: block;
-        top: 65%;
+        top:65%;
     }
     .card {
         margin: 4em auto;
